@@ -4,13 +4,13 @@
   tasks:
   - name: install webserver on debian node only
     apt:
-     name: {{mywebpackageforubuntu}}
+     name: "{{mywebpackageforubuntu}}"
      state: present
     when: ansible_os_family =="Debian"
   
   - name: install webserver on Redhat node only
     yum:
-      name: {{mywebpackageforredhat}}
+      name: "{{mywebpackageforredhat}}"
       state: present
     when: ansible_os_family =="Redhat"
     
