@@ -8,7 +8,7 @@
      state: present
     when: ansible_os_family =="Debian"
   
-  - name: install webserver on debian 
+  - name: i want to start webserver on debian 
     service:
        name: "{{mywebpackageforubuntu}}"
        state: started
@@ -20,10 +20,9 @@
       state: present
     when: ansible_os_family =="RedHat"
 
-  - name: install webserver on Redhat
+  - name: i want to start webserver on Redhat
     service:
       name: "{{mywebpackageforredhat}}"
       state: started
     when: ansible_os_family =="RedHat"
 
-    
