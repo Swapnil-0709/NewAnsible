@@ -18,11 +18,11 @@
     yum:
       name: "{{mywebpackageforredhat}}"
       state: present
-    when: ansible_os_family =="Redhat"
+    when: ansible_os_family =="RedHat"
 
   - name: install webserver on Redhat
     service:
       name: "{{mywebpackageforredhat}}"
       state: started
-    when: ansible_os_family =="Redhat"
+    when: ansible_os_family =="RedHat"
     
