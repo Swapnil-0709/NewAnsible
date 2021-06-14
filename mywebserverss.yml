@@ -2,7 +2,7 @@
 - hosts: mywebserver
   become: yes
   tasks:
-  - name: Install webserver on debian node only
+  - name: i want to install webserver on debian node only
     apt:
       name: "{{mywebpackageforubnutu}}"
       state: present
@@ -16,7 +16,7 @@
     when: ansible_os_family =="Debian"
 
     
-  - name: Install webserver on redhat node only
+  - name: i want to install webserver on redhat node only
     apt:
       name: "{{mywebpackageforredhat}}"
       state: present
