@@ -4,28 +4,25 @@
   tasks:
   - name: i want to install webserver on debian node only
     apt:
-      name: "{{ mywebpackageforubnutu }}"
+      name: "{{mywebpackageforubnutu}}"
       state: present
     when: ansible_os_family =="Debian"
-
     
   - name: I want to start webserver on debian
     service:
-      name: "{{ mywebpackageforubnutu }}"
+      name: "{{mywebpackageforubnutu}}"
       state: started
     when: ansible_os_family =="Debian"
-
     
   - name: i want to install webserver on redhat node only
     apt:
-      name: "{{ mywebpackageforredhat }}"
+      name: "{{mywebpackageforredhat}}"
       state: present
     when: ansible_os_family =="RedHat"
 
-  
   - name: I want to start webserver on redhat
-    apt:
-      name: "{{ mywebpackageforredhat }}"
+    service:
+      name: "{{mywebpackageforredhat}}"
       state: started
     when: ansible_os_family =="RedHat"
 
