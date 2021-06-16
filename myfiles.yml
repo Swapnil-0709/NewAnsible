@@ -2,8 +2,10 @@
 - hosts: 172.31.33.46
   become: yes
   tasks:
-  - name: i want to create file on ubuntu noce side
-    file:
-      path: /home/ubuntu/test.txt
-      state: touch
-      
+  - include_tasks: file.yml
+  
+  - nmae: i want to install webserver on ubuntu node
+    apt:
+      name: apache2
+      state: present
+

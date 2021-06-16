@@ -1,5 +1,5 @@
 
-- name: i want to create file on ubuntu noce side
-  file:
+ - name: i want to create file on ubuntu noce side
+   file:
       path: /home/ubuntu/test.txt
       state: touch
