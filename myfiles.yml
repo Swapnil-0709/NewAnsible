@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.33.46
+  become: yes
+  tasks:
+  - name: i want to create file on ubuntu noce side
+    file:
+      path: /home/ubuntu/test.txt
+      state: touch
+      
