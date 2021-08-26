@@ -1,11 +1,2 @@
-
-[mywebserver]
-172.31.33.46
-172.31.22.238
-
-[myapplicationserver]
-172.31.33.46
-
-[myredhatserver]
-172.31.22.238
+172.31.15.114
 
