@@ -1,2 +1,4 @@
 ---
 # defaults file for mytomcat8role
+
+mysqlpasswd: abs@123
