@@ -6,12 +6,12 @@
     ec2:
       key_name: MyTomcat
       instance_type: t2.micro
-      image: ami-0975f215b07bf47b1
+      image: ami-084528582e3ec170c
       wait: yes
       group: launch-wizard-3
       region: us-east-2
       count: 2
-      vpc_subnet_id: subnet-e6ae8baa
+      vpc_subnet_id: subnet-74f87f1f
       assign_public_ip: yes
       instance_tags:
         Name: myAnsibleUbuntuNode
